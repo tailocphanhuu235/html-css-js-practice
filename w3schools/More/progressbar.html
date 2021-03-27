@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <style>
+        #myProgressBar {
+            width: 100%;
+            background-color: grey;
+        }
+
+        #myBar {
+            width: 1%;
+            height: 30px;
+            background-color: green;
+            text-align: center;
+            color: white;
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myProgressBar">
+        <div id="myBar"><span id="labelProgress"></span></div>
+    </div>
+    <button id="btnRun">Run</button>
+</body>
+<script>
+    var currentPercent = 0;
+    function runBar() {
+        if (currentPercent >= 100) {
+            currentPercent = 0;
+        }
+        var myBar = document.getElementById('myBar');
+        var labelProgress = document.getElementById('labelProgress');
+        myBar.style.width = currentPercent + '%';
+        labelProgress.innerHTML = myBar.style.width
+        currentPercent += 1;
+    }
+
+    window.addEventListener('click', function (event) {
+        if (event.target.id == 'btnRun') {
+            setInterval(runBar, 100);
+        }
+    });
+</script>
+
+</html>

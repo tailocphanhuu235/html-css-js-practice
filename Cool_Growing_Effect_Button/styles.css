@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    overflow: hidden;
+  }
+  
+  button {
+    position: relative;
+    margin: 20px;
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    color: #fff;
+    background: #111;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  button:nth-child(1):hover, button:nth-child(2):hover {
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+  }
+
+  button:nth-child(1):before, button:nth-child(2):before {
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border-radius: 50px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity .5s;
+  }
+
+  button:nth-child(1):hover:before, button:nth-child(2):hover:before {
+    opacity: 1;
+    z-index: -1;
+  }
+
+  button:hover {
+    z-index: 1;
+    animation: glow 8s linear infinite;
+  }
+
+  @keyframes glow {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }

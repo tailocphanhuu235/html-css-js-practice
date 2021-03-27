@@ -1,0 +1,14 @@
+$primary-color: yellow
+
+@mixin flexBox()
+    display: flex
+    justify-content: center
+    align-items: center
+
+.header
+    height: 500px
+    &__logo
+        height: 100%
+        border: 1px solid red
+        background-color: $primary-color
+        @include flexBox()

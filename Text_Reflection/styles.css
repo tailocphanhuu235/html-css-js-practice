@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    place-items: center;
+    height: 100%;
+    display: grid;
+}
+
+.text {
+    font-family: sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    color: #202020;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    -webkit-box-reflect: below -30px linear-gradient(transparent, rgba(255, 255, 255, 0.4));
+}

@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card__container {
+    position: relative;
+    width: 400px;
+    /* height: 400px; */
+    margin: 50px auto;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #231E39;
+    color: #B3B8CD;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+}
+
+.card__container .pro {
+    position: absolute;
+    background-color: #FEBB0B;
+    color: #231E39;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 3px 7px;
+    top: 20px;
+    left: 30px;
+}
+
+.card__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 7px;
+    border: 1px solid #03BFCB;
+}
+
+h3 {
+    margin: 5px 0;
+}
+
+h6 {
+    margin: 5px 0;
+}
+
+p {
+    margin: 5px 0;
+    line-height: 30px;
+}
+
+.card__button button {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #03BFCB;
+    color: #03BFCB;
+    background-color: transparent;
+}
+
+.card__button button:hover {
+    background-color: #03BFCB;
+    color: #231E39;
+}
+
+.card__skills {
+    margin: 15px 0 0;
+    background-color: #1F1A36;
+    text-align: left;
+    padding: 15px 15px 0;
+}
+
+.card__skills h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card__skills a {
+    padding: 7px;
+    color: #B3B8CD;
+    border: 1px solid grey;
+    text-decoration: none;
+}

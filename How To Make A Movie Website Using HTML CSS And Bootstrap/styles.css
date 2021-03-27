@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.5),
+     rgba(0,0,0,0.5)),
+     url(photo/chienlang.jpg) center center fixed no-repeat;
+    background-size: cover;
+}
+
+/* Header */
+.header {
+    position: relative;
+    height: 10%;
+    margin-top: 5px;
+}
+
+.header .logo {
+    display: inline;
+}
+
+.header .logo img {
+    width: 70px;
+    height: 70px;
+}
+
+.header .logo .logo-txt {
+    position: absolute;
+    top: 25px;
+    display: inline;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.header a {
+    float: right;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+    background: rgb(96, 96, 228);
+    border-radius: 30px;
+    width: 150px;
+    text-align: center;
+    outline: none;
+}
+
+.header a:hover {
+    text-decoration: none;
+}
+
+/* Body */
+.body-movie {
+    margin-top: 30px;
+}
+
+.body-left h2, .body-left p, .body-left a {
+    color: #fff;
+}
+
+.body-left h2 {
+    margin-top: 20px;
+}
+
+/* .body-left .btn-watch-download {
+    border: solid 1px red;
+    display: inline;
+} */
+
+.body-left .cast-img {
+    margin-bottom: 20px;
+}
+
+.body-left .cast-img img{
+    width: 50px;
+    height: 50px;
+}
+
+.body-left .btn-watch-download a {
+    display: block;
+    float: left;
+    font-size: 15px;
+    padding: 10px;
+    text-decoration: none;
+    background: rgb(68, 180, 231);
+    border-radius: 30px;
+    text-align: center;
+    outline: none;
+    width: 200px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.btn-download {
+    background: transparent!important;
+    border: 1px solid #fff;
+}
+
+.margin-right-5 {
+    margin-right: 5px;
+}
+
+.body-left .btn-watch-download a:hover {
+    text-decoration: none;
+}
+
+.body-right {
+    /* border: solid 1px red; */
+    height: 300px;
+}
+
+.body-right img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    box-shadow: -6px 6px 5px 0 #000;
+} 
+
+/* Footer */
+
+.footer {
+    margin-top: 30px;
+}
+
+.footer h2{
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.footer img {
+    width: 100%;
+    height: 150px;
+    box-shadow: -6px 6px 5px 0 #000;
+    cursor: pointer;
+}
+
+.footer img:hover {
+    transition: 0.1s;
+    transform: translate(0, -10px)
+}

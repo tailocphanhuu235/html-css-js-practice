@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline Button</title>
+    <style>
+        .btn {
+            color: white;
+            background-color: green;
+            padding: 20px 40px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        .pressed:hover {
+            background-color: #3e8e41;
+        }
+
+        .pressed:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn pressed">Pressed</button>
+    <button class="btn arrow">Hover</button>
+    <button class="btn ripple">Ripple</button>
+</body>
+
+</html>

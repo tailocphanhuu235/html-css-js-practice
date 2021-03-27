@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="image-box">
+                <h1>Play Music</h1>
+                <div class="partner-logo">
+                    <img src="logo-1.png" alt="Apple">
+                    <img src="logo-1.png" alt="Apple">
+                    <img src="logo-1.png" alt="Apple">
+                    <img src="logo-1.png" alt="Apple">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-container">
+                <div class="menu">
+                    <button id="loginBtn" onclick="openLoginTab()">Login</button>
+                    <button id="registerBtn" onclick="openRegisterTab()">Register</button>
+                </div>
+                <div class="form-box">
+                    <div id="login-tab">
+                        <h1>I'm an account</h1>
+                        <input type="text" placeholder="User Name" />
+                        <input type="password" placeholder="password" />
+                        <button type="button">Log In</button>
+                    </div>
+                    <div id="register-tab">
+                        <h1>I'm new user</h1>
+                        <input type="text" placeholder="User Name" />
+                        <input type="email" placeholder="Email" />
+                        <input type="password" placeholder="password" />
+                        <button type="button">Register In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openLoginTab() {
+            document.getElementById('register-tab').style.display="none";
+            document.getElementById('login-tab').style.display="block";
+            document.getElementById('registerBtn').style.borderBottom="none";
+            document.getElementById('loginBtn').style.borderBottom="4px solid #c200ff";
+        }
+
+        function openRegisterTab() {
+            document.getElementById('register-tab').style.display="block";
+            document.getElementById('login-tab').style.display="none";
+            document.getElementById('registerBtn').style.borderBottom="4px solid #c200ff";
+            document.getElementById('loginBtn').style.borderBottom="none";
+        }
+    </script>
+</body>
+</html>

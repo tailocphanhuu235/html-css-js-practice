@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/gym.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#Capa_1 {
+    width: 400px;
+    margin: 0% auto;
+    display: block;
+}
+
+.man, .weight {
+    fill-opacity: 0;
+    stroke: #fff;
+    stroke-width: 3px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 2500;
+}
+
+.man {
+    animation: man 6s ease-in-out;
+}
+
+@keyframes man {
+    0% {
+        stroke-dashoffset: 2500;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.weight {
+    animation: weight 12s ease-in-out;
+}
+
+@keyframes weight {
+    0% {
+        stroke-dashoffset: 2500;
+    }
+    50% {
+        stroke-dashoffset: 2500;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
