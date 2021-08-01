@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Gallery Using HTML CSS | Easy Tutorial</title>
+  </head>
+  <body>
+    <div class="full-img" id="fullImgBox">
+        <img src="images/img1.jpg" alt="" id="fullImg">
+        <span onclick="closeImg()">X</span>
+    </div>
+
+    <div class="img-gallery">
+      <img src="images/img1.jpg" alt="" onclick="openImg(this.src)"/>
+      <img src="images/img2.jpg" alt="" onclick="openImg(this.src)"/>
+      <img src="images/img3.jpg" alt="" onclick="openImg(this.src)"/>
+      <img src="images/img4.jpg" alt="" onclick="openImg(this.src)"/>
+      <img src="images/img5.jpg" alt="" onclick="openImg(this.src)"/>
+      <img src="images/img6.jpg" alt="" onclick="openImg(this.src)"/>
+      <img src="images/img7.jpg" alt="" onclick="openImg(this.src)"/>
+      <img src="images/img8.jpg" alt="" onclick="openImg(this.src)"/>
+    </div>
+
+    <script>
+        var fullImgBox = document.getElementById('fullImgBox');
+        var fullImg = document.getElementById('fullImg');
+
+        function closeImg() {
+            fullImgBox.style.display = 'none';
+        }
+        
+        function openImg(src) {
+            fullImgBox.style.display = 'flex';
+            fullImg.src = src;
+        }
+
+    </script>
+  </body>
+</html>
